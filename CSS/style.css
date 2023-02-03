@@ -24,8 +24,42 @@ body {
     align-items: center;
 }
 
+ fieldset {
+    width: 480px;
+    padding: 30px 50px;
+ }
 
 form {
-    width: 600px;
     background-color: white;
 }
+
+.form__group {
+    margin-bottom: 15px;
+    width: 100%;
+    float: left;
+}
+
+label {
+    float: left;
+}
+
+input {
+    padding: 8px 12px;
+    width: 100%;
+    float: left;
+    border: 2px solid rgb(174, 164, 164);
+    border-radius: 8px;
+}
+
+.button {
+    border: 2px solid gray;
+    float: left;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* 
+textarea {
+    resize: none;
+} */
