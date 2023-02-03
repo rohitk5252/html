@@ -39,7 +39,7 @@ form {
     float: left;
 }
 
-label {
+.form__label {
     float: left;
 }
 
