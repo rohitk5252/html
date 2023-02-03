@@ -5,6 +5,14 @@
 <head>
     <title>Assignment2 Rohit Kumar 29590</title>
     <style>
+
+        * {
+                /* necessary */
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+        }
+
         .table {
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 text-align: center;
@@ -13,12 +21,14 @@
                 border: none;
                 border-collapse: collapse;
                 border: 2px soli gray;
+                /* table-layout: fixed; */
         }
 
         th, td {
                border: 1px solid grey;
                padding: 8px 12px ; 
                line-height: 1.3;
+               white-space: nowrap;
         }
 
         th {
@@ -34,155 +44,169 @@
                 background-color: rgb(178, 186, 192);
         }
 
+        td {
+                cursor: pointer;
+        }
+
         tr:hover {
                 background-color:rgba(38, 39, 40, 0.3);
                 color: rgb(255, 255, 255);
         }
-        
+
+        .table-wrapper {
+                width: 100%;
+                float: left;
+                overflow: scroll;
+        }
 
 
     </style>
 </head>
 <body>
-   <table class="table">
-        <tr>
-            <th rowspan="19"><p>S</p><p>T</p><p>U</p><p>D</p><p>E</p><p>N</p><p>T</p> &nbsp; <p>I</p> <p>N</p> <p>F</p> <p>O</p></th>
-            <th rowspan="2">S.No.</th>
-            <th rowspan="2">Name</th>
-            <th colspan="2" >College Details</th>
-            <th colspan="2" >Internship</th>
-        </tr>
-        <tr>
-            <th>Name</th>
-            <th >Branch</th>
-            <th >Company</th>
-            <th >Course</th>
-        </tr>
-        <tr>
-            <td>01</td>
-            <td>Pranshu Yadav</td>
-            <td>LPU</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Full Stack .</td>
-        </tr>
-       
-        <tr>
-            <td>02</td>
-            <td>Vinay</td>
-            <td>GNDEC</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Full Stack</td>
-        </tr>
-        <tr>
-            <td>03</td>
-            <td>Rohit Kumar</td>
-            <td>GNDEC</td>
-            <td>B.Tech IT</td>
-            <td>VenturePact</td>
-            <td>Full Stack</td>
-        </tr>
-            <tr>
-            <td>04</td>
-            <td>Anupam</td>
-            <td>LPU</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Full Stack </td>
-        </tr>
-            <td>05</td>
-            <td>Akash Gupta</td>
-            <td>LPU</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Full Stack .</td>
-    </tr>
-            <td>06</td>
-            <td>Saacket Pandit</td>
-            <td>GNA</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Full Stack .</td>
-            <tr>
-                <td>0</td>
+        <div class="table-wrapper">
+
+                
+        <table class="table">
+                <tr>
+                <th rowspan="19"><p>S</p><p>T</p><p>U</p><p>D</p><p>E</p><p>N</p><p>T</p> &nbsp; <p>I</p> <p>N</p> <p>F</p> <p>O</p></th>
+                <th rowspan="2">S.No.</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2" >College Details</th>
+                <th colspan="2" >Internship</th>
+                </tr>
+                <tr>
+                <th>Name</th>
+                <th >Branch</th>
+                <th >Company</th>
+                <th >Course</th>
+                </tr>
+                <tr>
+                <td>01</td>
+                <td>Pranshu Yadav</td>
+                <td>LPU</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td>Full Stack .</td>
+                </tr>
+        
+                <tr>
+                <td>02</td>
+                <td>Vinay</td>
+                <td>GNDEC</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td>Full Stack</td>
+                </tr>
+                <tr>
+                <td>03</td>
+                <td>Rohit Kumar</td>
+                <td>GNDEC</td>
+                <td>B.Tech IT</td>
+                <td>VenturePact</td>
+                <td>Full Stack</td>
+                </tr>
+                <tr>
+                <td>04</td>
                 <td>Anupam</td>
                 <td>LPU</td>
                 <td>B.Tech</td>
                 <td>VenturePact</td>
                 <td>Full Stack </td>
-    </tr>
-            <td>07</td>
-            <td>Girija Shanker Mohanta</td>
-            <td>LPU</td>
-            <td>MCA</td>
-            <td>VenturePact</td>
-            <td>Full Stack .</td>
-    </tr>
-            <td>08</td>
-            <td>Atul Gupta</td>
-            <td>LPU</td>
-            <td>MCA</td>
-            <td>VenturePact</td>
-            <td>Full Stack .</td>
-    </tr>
-            <td>09</td>
-            <td>Mayank</td>
-            <td>GNDEC</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Full Stack</td>
-    </tr>
-            <td>10</td>
-            <td>Gauri</td>
-            <td>GNA</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Testing</td>
-    </tr>
-            <td>11</td>
-            <td>Jassimran</td>
-            <td>GNA</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Full Stack</td>
-    </tr>
-    <tr>
-            <td>12</td>
-            <td>Gurjot</td>
-            <td>GNA</td>
-            <td>MCA</td>
-            <td>VenturePact</td>
-            <td>Testing</td>
-    </tr>
-            <td>13</td>
-            <td>Manthan Ugemuge</td>
-            <td>LPU</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Full Stack </td>
-    </tr>
+                </tr>
+                <td>05</td>
+                <td>Akash Gupta</td>
+                <td>LPU</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td>Full Stack .</td>
+        </tr>
+                <td>06</td>
+                <td>Saacket Pandit</td>
+                <td>GNA</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td>Full Stack .</td>
+                <tr>
+                        <td>0</td>
+                        <td>Anupam</td>
+                        <td>LPU</td>
+                        <td>B.Tech</td>
+                        <td>VenturePact</td>
+                        <td>Full Stack </td>
+        </tr>
+                <td>07</td>
+                <td>Girija Shanker Mohanta</td>
+                <td>LPU</td>
+                <td>MCA</td>
+                <td>VenturePact</td>
+                <td>Full Stack .</td>
+        </tr>
+                <td>08</td>
+                <td>Atul Gupta</td>
+                <td>LPU</td>
+                <td>MCA</td>
+                <td>VenturePact</td>
+                <td>Full Stack .</td>
+        </tr>
+                <td>09</td>
+                <td>Mayank</td>
+                <td>GNDEC</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td>Full Stack</td>
+        </tr>
+                <td>10</td>
+                <td>Gauri</td>
+                <td>GNA</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td>Testing</td>
+        </tr>
+                <td>11</td>
+                <td>Jassimran</td>
+                <td>GNA</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td>Full Stack</td>
+        </tr>
+        <tr>
+                <td>12</td>
+                <td>Gurjot</td>
+                <td>GNA</td>
+                <td>MCA</td>
+                <td>VenturePact</td>
+                <td>Testing</td>
+        </tr>
+                <td>13</td>
+                <td>Manthan Ugemuge</td>
+                <td>LPU</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td>Full Stack </td>
+        </tr>
 
-            <td>14</td>
-            <td>Adarsh</td>
-            <td>GNDEC</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Frontend .</td>
-    </tr>
-            <td>15</td>
-            <td>Harpreet</td>
-            <td>GNDEC</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td> UI/UX</td>
-    </tr>
-            <td>16</td>
-            <td>Jasnoor</td>
-            <td>GNDEC</td>
-            <td>B.Tech</td>
-            <td>VenturePact</td>
-            <td>Frontend</td>
+                <td>14</td>
+                <td>Adarsh</td>
+                <td>GNDEC</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td>Frontend .</td>
+        </tr>
+                <td>15</td>
+                <td>Harpreet</td>
+                <td>GNDEC</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td> UI/UX</td>
+        </tr>
+                <td>16</td>
+                <td>Jasnoor</td>
+                <td>GNDEC</td>
+                <td>B.Tech</td>
+                <td>VenturePact</td>
+                <td>Frontend</td>
 
-    </tr>
-   </table>
+        </tr>
+        </table>
+   </div>
+</body>

@@ -1,0 +1,31 @@
+* , *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    min-height: 100%;
+    background-image: url(https://picsum.photos/1200/1200);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center ;
+    background-position-y: center ;
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    width: 600px;
+    background-color: white;
+}
