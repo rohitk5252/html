@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="./CSS/style.css"></head>
 <body>
     <form class="form">
-        <fieldset>
-    <legend>Signup Form</legend>
+        
+   <h3>Sign Up</h3>
 
         <div class="form__group">
             <label class="form__label" for="form__name">Name* </label> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -24,7 +24,7 @@
         </div>
             <br>
         <div class="form__group">  
-            <label >Gender</label>&nbsp;&nbsp;&nbsp;
+            <label class="form__label">Gender</label>
             <input type="radio" id="male"  name="gender">
             <label class="form__label" for="male">Male</label> 
             <input type="radio" id="female"  name="gender">
@@ -32,17 +32,17 @@
         </div>
             <br>
         <div class="form__group">  
-            <label >Mobile</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="form__label">Mobile</label>
             <input type="number" name="" id="">
         </div>
             <br>
         <div class="form__group">  
-            <label >Address</label>&nbsp;&nbsp;
+            <label class="form__label address">Address</label>&nbsp;&nbsp;
             <textarea placeholder="Address"></textarea>
         </div>
             <br>
         <div class="form__group">  
-            <label >City</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="form__label">City</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <select name="city" id="city">
                 <option value="">Ludhiana</option>
                 <option value="">Jalandhar</option>
@@ -51,19 +51,21 @@
         </div>
             <br>
         <div class="form__group">  
-            <label >Skills</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="checkbox" id="html">
-            <label class="form__label" for="html"> HTML</label>
-            <input type="checkbox" id="js">
-            <label class="form__label" for="js"> JS </label><br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="checkbox" id="css">
-            <label class="form__label" for="css"> CSS </label>
-             &nbsp; &nbsp;<input type="checkbox" id="mongo">
-            <label class="form__label" for="mongo"> MongoDB</label><br>
+            <label class="form__label">Skills</label>
+            <span class="checkbox">
+                <input type="checkbox" id="html">
+                <label for="html"> HTML</label>
+                <input type="checkbox" id="js">
+                <label  for="js"> JS </label><br>
+                <input type="checkbox" id="css">
+                <label  for="css"> CSS </label>
+                <input type="checkbox" id="mongo">
+                <label  for="mongo"> MongoDB</label>
+            </span>
         </div>
         <br>
         &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<button class="button">Submit</button>
-    </fieldset>
+
     </form>
 </body>
 </html>
