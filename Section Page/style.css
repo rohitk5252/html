@@ -20,8 +20,8 @@ header {
     float: left;
     width: 100%;
     background-color: white;
-    height: 60px;
-    padding: 10px 0;
+    height: 75px;
+    padding: 0 0;
 }
 
 .logo_part img {
@@ -58,7 +58,7 @@ nav ul li a {
 
 .banner {
     background-image: url('https://img.freepik.com/free-vector/business-presentation-banner-with-blue-geometric-shape_1017-32330.jpg') ;
-    min-height: 603px;
+    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -87,11 +87,37 @@ nav ul li a {
 }
 
 .section {
-    float: left; 
+    /* float: left;  */
     width: 100%;
-    padding: 100px;
+    /* height: 100vh; */
+    /* padding: 100px; */
 }
 
 .text_center {
     text-align: center;
 }
+
+.row > .col-4 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card {
+    /* position: relative; */
+    width: 33.3%;
+    height: 30vh;
+    padding: 25px;
+    border: 1px solid b8b3b3;
+    margin: 0 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #a19898;
+}
+.card:hover {
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 12px #716e6e;
+}
+
+.container {
+    margin: 25px 0;
+} 
